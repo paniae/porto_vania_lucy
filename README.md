@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aruna Dev — Dark Crimson Portfolio (Next.js & Full-stack API)
 
-## Getting Started
+A modern, high-performance portfolio application built with **Next.js 16 (App Router)**, **React 19**, **Tailwind CSS v4**, and native **Next.js Route Handlers (API)**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- **Modular Section Architecture**: Each section is separated into dedicated, reusable components under `components/`.
+- **Backend API Routes**: Built-in API endpoints for handling contact inquiries (`/api/contact`) and retrieving portfolio data (`/api/portfolio`).
+- **Interactive Contact Modal**: Full client-side validation, loading spinner states, success screens, and seamless integration with the backend API.
+- **Rich Dark Crimson Aesthetics**: Glowing aura portrait effects (`aura-glow`), crimson underline accents, modern typography (`Syne`, `Plus Jakarta Sans`, `JetBrains Mono`), and smooth micro-interactions.
+- **Responsive Navigation**: Desktop navigation bar plus mobile slide-out drawer menu with social links.
+- **Fast & Optimized**: Prerendered static pages with dynamic server-side API handlers.
+
+---
+
+## 📁 Project Structure
+
+```text
+├── app/
+│   ├── api/
+│   │   ├── contact/
+│   │   │   └── route.ts        # POST (submit message) & GET (recent inquiries)
+│   │   └── portfolio/
+│   │       └── route.ts        # GET (portfolio metadata, skills, services)
+│   ├── globals.css             # Design tokens, aura glow, crimson accents, typography
+│   ├── layout.tsx              # Root layout with fonts & metadata
+│   └── page.tsx                # Main page assembling all modular sections
+├── components/
+│   ├── Navbar.tsx              # Sticky navbar with logo, nav links, and mobile drawer
+│   ├── Hero.tsx                # Hero section with animated portrait & CTAs
+│   ├── About.tsx               # About section with portrait, bio, & Download CV
+│   ├── Skills.tsx              # Categorized CV skills showcase (no percentage bars)
+│   ├── Services.tsx            # 6 interactive service cards with hover glow effects
+│   ├── Contact.tsx             # Contact section with "Let's Chat" button
+│   ├── ContactModal.tsx        # Modal dialog connected to /api/contact API
+│   └── Footer.tsx              # Footer with copyright and back-to-top action
+├── data/
+│   └── portfolioData.ts        # Structured data for skills, services, bio, and socials
+├── types/
+│   └── portfolio.ts            # TypeScript interfaces and data models
+└── public/
+    └── avatar.jpg              # High-resolution avatar silhouette
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔌 Backend API Documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Contact Submission (`POST /api/contact`)
+Submit project inquiries from the frontend or third-party clients.
 
-## Learn More
+- **Request Body:**
+  ```json
+  {
+    "name": "Bruce Wayne",
+    "email": "bruce@wayne.corp",
+    "projectScope": "Need a secure cyber terminal dashboard redesign."
+  }
+  ```
+- **Response (`201 Created`):**
+  ```json
+  {
+    "success": true,
+    "message": "Thank you, Bruce Wayne! Your message has been sent successfully. I'll get back to you within 24 hours.",
+    "data": {
+      "id": "sub-1790582592861",
+      "createdAt": "2026-09-28T08:03:12.861Z"
+    }
+  }
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+### 2. View Recent Inquiries (`GET /api/contact`)
+Retrieve recent messages stored on the backend.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Portfolio Data (`GET /api/portfolio`)
+Returns all profile data, CV skill categories, and service offerings.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 💻 Running Locally
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Development server
+npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Build for production
+npm run build
+
+# Start production server
+npm run start
+
+# Lint check
+npm run lint
+```
