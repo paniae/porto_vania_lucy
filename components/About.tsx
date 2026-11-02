@@ -38,7 +38,6 @@ export default function About({ onOpenContact }: AboutProps) {
             </div>
           </div>
 
-          {/* Right: Passion Copy & Informatics Bio */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-2">
               Vania Lucy Syntya &bull; Vania
