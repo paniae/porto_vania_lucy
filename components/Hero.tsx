@@ -54,7 +54,7 @@ export default function Hero({ socials, onOpenContact }: HeroProps) {
         <div className="w-8 h-2.5 rounded-full bg-neutral-200 mb-6" />
 
         {/* Heading */}
-        <h1 className="font-headline text-5xl sm:text-6xl lg:text-7xl font-bold text-neutral-900 tracking-tight mb-4">
+        <h1 className="font-headline text-4xl sm:text-6xl lg:text-7xl font-bold text-neutral-900 tracking-tight mb-4">
           Hi, I&apos;m Vania.
         </h1>
 
