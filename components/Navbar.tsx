@@ -85,8 +85,8 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
   ];
 
   return (
-    <header className="fixed top-3 sm:top-5 left-0 right-0 z-50 flex justify-center px-2 sm:px-4 pointer-events-none">
-      <nav className="pointer-events-auto max-w-[calc(100vw-1rem)] bg-white/95 backdrop-blur-md border border-neutral-200/90 shadow-[0_4px_24px_rgba(0,0,0,0.08)] rounded-full p-1 sm:p-1.5 flex items-center gap-0.5 sm:gap-1.5 transition-all overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+    <header className="fixed top-2.5 sm:top-5 left-0 right-0 z-50 flex justify-center px-3 sm:px-4 pointer-events-none">
+      <nav className="pointer-events-auto w-full max-w-[340px] sm:max-w-none sm:w-auto bg-white/95 backdrop-blur-md border border-neutral-200/90 shadow-[0_4px_24px_rgba(0,0,0,0.08)] rounded-full p-1 sm:p-1.5 flex items-center justify-between sm:justify-center gap-0.5 sm:gap-1.5 transition-all">
         {navItems.map((item) => {
           const isActive = activeSection === item.id;
           return (
@@ -99,7 +99,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
                   onOpenContact();
                 }
               }}
-              className={`flex items-center gap-1.5 px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium tracking-tight whitespace-nowrap transition-all duration-200 ${
+              className={`flex-1 sm:flex-initial flex items-center justify-center gap-1 sm:gap-1.5 px-2 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs md:text-sm font-medium tracking-tight whitespace-nowrap transition-all duration-200 ${
                 isActive
                   ? "bg-black text-white shadow-xs"
                   : "text-neutral-600 hover:text-black hover:bg-neutral-100/80"
