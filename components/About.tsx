@@ -17,28 +17,60 @@ export default function About({ onOpenContact }: AboutProps) {
           <div className="w-12 h-1 bg-neutral-900 mx-auto mt-3 rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left: Monogram — no image, no box */}
-          <div className="lg:col-span-5 flex flex-col items-center gap-5">
-            {/* Large monogram circle */}
-            <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-neutral-900 flex items-center justify-center shadow-lg">
-              <span className="font-headline text-6xl sm:text-7xl font-bold text-white tracking-tight leading-none">
-                V
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+          {/* Left Column: Quick Profile Highlights (Clean Typography, no box, no circle) */}
+          <div className="lg:col-span-4 flex flex-col gap-6 sm:gap-7 text-left border-b lg:border-b-0 lg:border-r border-neutral-200 pb-8 lg:pb-0 lg:pr-8">
+            <div>
+              <span className="text-[11px] uppercase tracking-widest text-neutral-400 font-semibold block mb-1">
+                Role &amp; Specialization
               </span>
+              <p className="text-base sm:text-lg font-bold text-neutral-900 font-headline">
+                Full Stack &amp; Web Developer
+              </p>
             </div>
 
-            {/* Name + role */}
-            <div className="flex flex-col items-center gap-1 text-center">
-              <span className="font-headline text-lg font-bold text-neutral-900 tracking-widest uppercase">
-                Vania Lucy Syntya
+            <div>
+              <span className="text-[11px] uppercase tracking-widest text-neutral-400 font-semibold block mb-1">
+                Academic Background
               </span>
-              <span className="text-xs uppercase tracking-[0.2em] text-neutral-400 font-medium">
-                Full Stack Developer
+              <p className="text-sm sm:text-base font-semibold text-neutral-800">
+                Informatics &amp; Computer Science
+              </p>
+              <p className="text-xs text-neutral-500 mt-0.5">
+                Software Engineering &amp; System Architecture
+              </p>
+            </div>
+
+            <div>
+              <span className="text-[11px] uppercase tracking-widest text-neutral-400 font-semibold block mb-1">
+                Core Stack
               </span>
+              <p className="text-sm sm:text-base font-semibold text-neutral-800">
+                React, Next.js, Laravel, Node.js
+              </p>
+              <p className="text-xs text-neutral-500 mt-0.5">
+                TypeScript, MySQL, RESTful APIs
+              </p>
+            </div>
+
+            <div>
+              <span className="text-[11px] uppercase tracking-widest text-neutral-400 font-semibold block mb-1">
+                Availability
+              </span>
+              <div className="flex items-center gap-2 mt-1">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span className="text-sm font-semibold text-neutral-900">
+                  Open for Opportunities
+                </span>
+              </div>
             </div>
           </div>
 
-          <div className="lg:col-span-7 flex flex-col items-start text-left">
+          {/* Right Column: Narrative Bio & Actions */}
+          <div className="lg:col-span-8 flex flex-col items-start text-left">
             <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-2">
               Vania Lucy Syntya &bull; Vania
             </span>
