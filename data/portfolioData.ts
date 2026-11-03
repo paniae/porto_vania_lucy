@@ -61,7 +61,7 @@ export const portfolioData: PortfolioData = {
       id: "padukuhan-bruno",
       title: "Padukuhan Bruno II — Digital Village & Citizen Services Portal",
       category: "Public Sector & Community Web Portal",
-      description: "A comprehensive digital information and community public services platform for Padukuhan Bruno II, Kalurahan Ngestirejo. Features village public service directories, local UMKM economic catalog, admin agenda management for Dukuh, and citizen grievance reporting with photo evidence tracking.",
+      description: "A comprehensive digital information and community public services platform for Padukuhan Bruno II, Kalurahan Ngestirejo. Features village public service directories, a local MSME economic catalog, administrative agenda management for the village head, and citizen grievance reporting with photo evidence tracking.",
       images: [
         "/projects/padukuhan-bruno-home.png",
         "/projects/padukuhan-bruno-admin.png",
@@ -73,9 +73,9 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "webgis-uriemi",
-      title: "WebGIS Uriemi — Sistem Informasi Geografis Desa",
+      title: "WebGIS Uriemi — Village Geographic Information System",
       category: "Geographic Information System (GIS)",
-      description: "Sistem Informasi Geografis berbasis web untuk Desa Uriemi, Kecamatan Rasiey, Teluk Wondama, Papua Barat. Menampilkan 10 layer peta interaktif mencakup batas administrasi desa, tutupan lahan, potensi pertanian, peternakan, perikanan, jenis tanah, topografi, pH tanah, nitrogen tanah, hingga rencana tata ruang mikro. Dibangun menggunakan Leaflet.js dengan basemap OpenStreetMap dan data spasial GeoJSON.",
+      description: "A web-based Geographic Information System for Uriemi Village, Rasiey District, Teluk Wondama, West Papua. Features 10 interactive map layers covering village administrative boundaries, land cover, agricultural, livestock, and fishery potential, soil types, topography, soil pH, soil nitrogen, and micro-spatial zoning plans. Developed with Leaflet.js utilizing OpenStreetMap basemaps and GeoJSON spatial data.",
       images: [
         "/projects/webgis-uriemi-topografi.png"
       ],
@@ -87,7 +87,7 @@ export const portfolioData: PortfolioData = {
       id: "procurement-system",
       title: "Procurement System — Supply Chain & Request Management",
       category: "Enterprise Dashboard & Supply Chain",
-      description: "Sistem manajemen procurement berbasis web dengan dua role dashboard: Procurement Center untuk mengelola request pengadaan barang (URGENT/PROSES/DONE), dan Teknis Dashboard untuk submit dan tracking request kebutuhan proyek. Fitur meliputi request management, status tracking, export data, pencarian, dan notifikasi read/unread per request.",
+      description: "A web-based procurement management system featuring dual role dashboards: Procurement Center to manage and process item procurement requests (URGENT/IN PROGRESS/DONE), and Technical Dashboard to submit and track project supply requisitions. Features include request lifecycle management, status tracking, data export, search filtering, and read/unread request notifications.",
       images: [
         "/projects/procurement-dashboard.png",
         "/projects/teknis-dashboard.png"
