@@ -103,10 +103,10 @@ export default function ContactModal({
               </svg>
             </div>
             <h3 className="font-headline text-xl font-bold text-neutral-900 mb-2">
-              Pesan Siap Dikirim!
+              Message Ready to Send!
             </h3>
             <p className="text-sm text-neutral-600 leading-relaxed mb-6">
-              Pesan Anda telah disiapkan untuk dikirim ke <span className="font-semibold text-neutral-900">vanialucysyntya42@gmail.com</span>. Jika aplikasi email tidak terbuka otomatis, silakan pilih salah satu opsi berikut:
+              Your message has been prepared for <span className="font-semibold text-neutral-900">vanialucysyntya42@gmail.com</span>. If your email app does not open automatically, please choose an option below:
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 mb-5">
               <a
@@ -116,7 +116,7 @@ export default function ContactModal({
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span>Buka Aplikasi Email</span>
+                <span>Open Email App</span>
               </a>
               <a
                 href={emailUrls.gmail}
@@ -127,14 +127,14 @@ export default function ContactModal({
                 <svg className="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
                 </svg>
-                <span>Kirim via Gmail Web</span>
+                <span>Send via Gmail Web</span>
               </a>
             </div>
             <button
               onClick={handleReset}
               className="text-xs text-neutral-500 hover:text-neutral-800 underline cursor-pointer"
             >
-              Selesai &amp; Tutup
+              Done &amp; Close
             </button>
           </div>
         ) : (
@@ -147,7 +147,7 @@ export default function ContactModal({
                 Let&apos;s Discuss Your Project
               </h3>
               <p className="text-xs sm:text-sm text-neutral-500 mt-1">
-                Pesan akan langsung diarahkan ke email <span className="text-neutral-800 font-medium">vanialucysyntya42@gmail.com</span>.
+                Your message will be sent directly to <span className="text-neutral-800 font-medium">vanialucysyntya42@gmail.com</span>.
               </p>
             </div>
 
@@ -225,14 +225,14 @@ export default function ContactModal({
                         d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                       ></path>
                     </svg>
-                    <span>Mengarahkan ke Email...</span>
+                    <span>Redirecting to Email...</span>
                   </>
                 ) : (
                   <span className="flex items-center gap-2">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <span>Kirim Pesan ke Vania</span>
+                    <span>Send Message to Vania</span>
                   </span>
                 )}
               </button>
